@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  src: local("HankenGrotesk"),
+    url("HankenGrotesk-VariableFont_wght.ttf") format("truetype"),
+    url("./static/HankenGrotesk-Bold.ttf") format("truetype"),
+    url("./static/HankenGrotesk-ExtraBold.ttf") format("truetype"),
+    url("./static/HankenGrotesk-Medium.ttf") format("truetype");
+}

@@ -1,13 +1,91 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  src: local("HankenGrotesk"),
+    url("./fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "HankenGrotesk";
+  src: local("HankenGrotesk"),
+    url("./fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "HankenGrotesk";
+  src: local("HankenGrotesk"),
+    url("./fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "HankenGrotesk";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.summary-list {
+  .Reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+  }
+  .Memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+  }
+  .Verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+  }
+  .Visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+  }
+}
+
+.yourResult {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-radius: 0px 0px 25px 25px;
+  padding: 25px 25px;
+  h1 {
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+
+  h2 {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  #result_description {
+    text-wrap: balance;
+    font-size: 14px;
+  }
+  .circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0)
+    );
+    text-align: center;
+    padding-top: 35px;
+    margin: auto;
+    h1 {
+      font-size: 50px;
+      font-weight: 800;
+      padding-bottom: 0px;
+    }
+  }
 }
